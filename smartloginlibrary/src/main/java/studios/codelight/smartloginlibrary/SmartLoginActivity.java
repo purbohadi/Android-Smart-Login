@@ -119,7 +119,7 @@ public class SmartLoginActivity extends AppCompatActivity implements
         if(config.isFacebookEnabled()){
             signinContainer.addView(layoutInflater.inflate(R.layout.fragment_facebook_login, mContainer, false));
             AppCompatButton facebookButton = (AppCompatButton) findViewById(R.id.login_fb_button);
-            if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
+            if(Build.VERSION.SDK_INT >= 21){
                 facebookButton.setCompoundDrawablesWithIntrinsicBounds(R.drawable.facebook_vector, 0, 0, 0);
             } else {
                 facebookButton.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_facebook_white_36dp, 0, 0, 0);
@@ -134,7 +134,7 @@ public class SmartLoginActivity extends AppCompatActivity implements
             }*/
             signinContainer.addView(layoutInflater.inflate(R.layout.fragment_google_login, mContainer, false));
             AppCompatButton googlePlusButton = (AppCompatButton) findViewById(R.id.login_google_button);
-            if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
+            if(Build.VERSION.SDK_INT >= 21){
                 googlePlusButton.setCompoundDrawablesWithIntrinsicBounds(R.drawable.google_plus_vector, 0, 0, 0);
             } else {
                 googlePlusButton.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_google_plus_white_36dp, 0, 0, 0);
